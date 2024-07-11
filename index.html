@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pouches Tracker</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <!-- Start header -->
+    <div class="header">
+      <a class="logo" href="#">Pouches Tracker</a>
+    </div>
+    <!-- End header -->
+    <!-- Start controls -->
+    <div class="controls">
+      <div class="container">
+        <div class="controls-content">
+          <div class="add main-btn">Add</div>
+          <div class="remove main-btn">Remove</div>
+          <div class="clear main-btn">Clear</div>
+        </div>
+        <div class="search-area">
+          <input class="search-input" type="number" min="0">
+          <div class="search main-btn">Search</div>
+        </div>
+      </div>
+    </div>
+    <!-- End controls -->
+    <!-- Start pouches -->
+    <div class="pouches">
+      <div class="container">
+        <table>
+          <tr>
+            <th>Check</th>
+            <th>ID</th>
+            <th>Size</th>
+            <th>Date</th>
+            <th>Content</th>
+          </tr>
+          <!-- New Content will be assigned here -->
+        </table>
+      </div>
+    </div>
+    <!-- End pouches -->
+    <!-- Overlay -->
+    <div class="overlay" style="display: none;"></div>
+
+    <!-- Start Add button menu -->
+    <div class="add-menu" style="display: none;">
+      <h2 class="add-title">Add new pouch</h2>
+
+      <form class="size-picker">
+        <h4>Choose pouch size</h4>
+        <div class="choices">
+          <input type="radio" id="small" class="small" value="small"
+            name="size">
+          <label for="small">Small</label>
+          <input type="radio" id="medium" class="medium" value="medium"
+            name="size">
+          <label for="medium">Medium</label>
+          <input type="radio" id="large" class="large" value="large"
+            name="size" checked>
+          <label for="large">Large</label>
+        </div>
+      </form>
+
+      <form class="date-picker">
+        <h4>Date</h4>
+        <div class="choices">
+          <input type="radio" id="today" class="today" value="today"
+            name="dateValue" checked>
+          <label for="today">Today</label>
+          <input type="radio" id="date" class="date" value="date"
+            name="dateValue">
+          <label for="date">Date</label>
+        </div>
+        <input type="date"
+          class="input-date-picker"
+          min="2024-01-01"
+          max="2025-12-31"
+          step="1"
+          style="display: none;">
+      </form>
+
+      <form class="contents">
+        <h4>Contents</h4>
+        <div class="contents-container">
+          <div class="buttons-container">
+            <input type="button" value="Add new item" class="add-btn main-btn">
+            <input type="button" value="Remove last item" class="remove-btn">
+          </div>
+          <div class="number-of-contents">
+            <input type="text">
+            <input type="text">
+          </div>
+        </div>
+      </form>
+
+      <button class="add-new-pouch">Add</button>
+    </div>
+    <!-- End Add button menu -->
+    <!-- Start footer -->
+    <div class="footer">
+      <p>Still under development wait for new updates &#128513;</p>
+      <p>يارب سامي يجيب امتياز&#128511;</p>
+    </div>
+    <!-- End footer -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
