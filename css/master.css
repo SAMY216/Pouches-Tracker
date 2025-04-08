@@ -318,7 +318,9 @@ body {
   height: 20vb;
   background-color: #3e4450;
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer p {
   font-size: 22px;
